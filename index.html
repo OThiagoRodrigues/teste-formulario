@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header class="cabeca">
+        <h1 class="titulo">freeCodeCamp</h1>
+        <p class="cabeca__paragrafo">Obrigado por nos ajudar a melhorar a plataforma</p>
+    </header>
+    <main class="principal">
+        <section class="principal__secao">
+            <form class="principal__secao__formulario">
+                <div class="formulario__grupo">
+                    <label  class="paragrafo-label-formato" for="form__nome">Nome Completo:</label>
+                    <input class="caixa-estilo" id="form__nome" type="text" name="Coloque seu Nome" required>
+                </div>
+                <div class="formulario__grupo">
+                    <label  class="paragrafo-label-formato" for="form__email">E-mail:</label>
+                    <input class="caixa-estilo" id="form__email" type="email" required>
+                </div>
+                <div class="formulario__grupo">
+                    <label  class="paragrafo-label-formato" for="form__idade">Idade (opicional):</label>
+                    <input class="caixa-estilo" id="form__idade" type="number">
+                </div>
+                <div class="formulario__grupo">
+                    <p  class="paragrafo-label-formato" for="form__ocupacao">Qual opção melhor descreve sua função atual?</p>
+                    <select class="caixa-estilo" id="form__ocupacao" required>
+                        <option disabled selected value>Ocupação</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="trabalho">Trabalho em tempo integral</option>
+                        <option value="aprendo">Aprendo em tempo integral</option>
+                        <option value="prefironãofalar">Prefiro não falar</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="formulario__grupo">
+                    <p  class="paragrafo-label-formato">Você recomendaria o freeCodeCamp a um amigo?</p>
+                    <label>
+                        <input type="radio" name="recomendaria" value="Certamente" required> Certamente
+                    </label>
+                    <label>
+                        <input type="radio" name="recomendaria" value="Talvez"required> Talvez
+                    </label>
+                    <label>
+                        <input type="radio" name="recomendaria" value="Nao"required> Não
+                    </label>
+                </div>
+                <div class="formulario__grupo">
+                    <p  class="paragrafo-label-formato">Qual é o seu recurso favorito do freeCodeCamp?</p>
+                    <select  class="caixa-estilo" name="recurso" id="recurso-fav" required>
+                        <option disabled selected value>Selecione uma opção</option>
+                        <option value="desafios">Desafios</option>
+                        <option value="projetos">Projetos</option>
+                        <option value="comunidade">Comunidade</option>
+                        <option value="open-source">Open Source</option>
+                    </select>
+                </div>
+                <div class="formulario__grupo">
+                    <p  class="paragrafo-label-formato">O que você gostaria de ver melhorado? <br> (Marque todos os que se aplicam)</p>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="projetos-front-end"> Projetos Front-end
+                    </label>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="projetos-back-end"> Projetos Back-end
+                    </label>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="dados-visualizacao"> Visualização de dados
+                    </label>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="desafios"> Desafios
+                    </label>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="comunidade-open-source"> Comunidade Open Source
+                    </label>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="salas-ajuda"> Salas de ajuda do Gitter
+                    </label>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="videos"> Vídeos
+                    </label>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="encontros"> Encontros da cidade
+                    </label>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="wiki"> Wiki
+                    </label>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="forun"> Forun
+                    </label>
+                    <label>
+                        <input class="escolha" type="checkbox" name="recurso" value="cursos-adicionais"> Cursos adicionais
+                    </label>
+                </div>
+                <div class="formulario__grupo">
+                    <label  class="paragrafo-label-formato" for="texto">Algum comentário ou sugestão?</label>
+                    <textarea name="sugestao" id="texto" cols="30" rows="10" style="resize: vertical;"></textarea>
+                </div>
+                <div class="formulario__grupo">
+                    <button class="enviar" type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-branca: #f3f3f3;
+    --cor-azul-escuro: #000000;
+    --cor-azul-escuro-alpha: rgba(27, 27, 50, 0.8);
+    --cor-verde: #37af65;
+    --fonte-poppins: 'Poppins', sans-serif;
+}
+
+html {
+    padding: 100px 0;
+    color: var(--cor-branca);
+    font-size: 22px;
+    font-family: var(--fonte-poppins);
+    font-weight: 400;
+    background-color: var(--cor-azul-escuro);
+    background-image: url(/img/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabeca {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center ;
+}
+
+.cabeca__paragrafo {
+    font-size: 16px;
+}
+
+.principal {
+    padding: 50px 40px ;
+    margin-top: 30px;
+    background-color: var(--cor-azul-escuro-alpha);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center ;
+    max-width: max-content;
+}
+
+.formulario__grupo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.caixa-estilo {
+    padding: 12px;
+}
+
+#texto {
+    min-height: 150px;
+}
+
+.enviar {
+    color: var(--cor-branca);
+    padding: 12px;
+    background-color: var(--cor-verde);
+    font-family: var(--fonte-poppins);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media (max-width: 1325px) {
+    html {
+        background-position-y: center;
+    }
+}
+
+@media (max-width: 675px) {
+    html {
+        font-size: 16px;
+    }
+}    
+
+@media ( max-width: 675px) {
+    html {
+        padding: 10%;
+    }
+}
+
+
+
+
+
