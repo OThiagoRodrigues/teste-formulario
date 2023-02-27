@@ -6,20 +6,20 @@
 }
 
 :root {
-    --cor-branca: #f3f3f3;
-    --cor-azul-escuro: #000000;
-    --cor-azul-escuro-alpha: rgba(27, 27, 50, 0.8);
-    --cor-verde: #37af65;
+    --cor-fonte: #f3f3f3;
+    --cor-de-fundo: #000000;
+    --cor-formulario: rgba(27, 27, 50, 0.8);
+    --cor-enviar: #37af65;
     --fonte-poppins: 'Poppins', sans-serif;
 }
 
 html {
     padding: 100px 0;
-    color: var(--cor-branca);
+    color: var(--cor-fonte);
     font-size: 22px;
     font-family: var(--fonte-poppins);
     font-weight: 400;
-    background-color: var(--cor-azul-escuro);
+    background-color: var(--cor-de-fundo);
     background-image: url(/img/background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body {
 .principal {
     padding: 50px 40px ;
     margin-top: 30px;
-    background-color: var(--cor-azul-escuro-alpha);
+    background-color: var(--cor-formulario);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -72,18 +72,26 @@ body {
 }
 
 .enviar {
-    color: var(--cor-branca);
+    color: var(--cor-fonte);
     padding: 12px;
-    background-color: var(--cor-verde);
+    background-color: var(--cor-enviar);
     font-family: var(--fonte-poppins);
     font-size: 18px;
     font-weight: 400;
 }
 
 @media ( max-width: 1325px) {
+    :root {
+        --cor-fonte: #FFF3E4;
+        --cor-de-fundo: #6B4F4F;
+        --cor-formulario: #483434;
+        --cor-enviar: #EED6C4;
+    }
     html {
-        background-image: url(/img/backgrouns-celular.jpg);
-        background-repeat: inherit;
+        background-image: none;
+    }
+    .enviar {
+        color: var( --cor-de-fundo);
     }
 }
 
