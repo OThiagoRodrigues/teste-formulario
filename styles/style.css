@@ -80,14 +80,16 @@ body {
     font-weight: 400;
 }
 
-@media (max-width: 1325px) {
+@media ( max-width: 1325px) {
     html {
-        background-position-y: center;
+        background-image: url(/img/backgrouns-celular.jpg);
+        background-repeat: inherit;
     }
 }
 
 @media (max-width: 675px) {
     html {
+        
         font-size: 16px;
     }
 }    
@@ -97,8 +99,3 @@ body {
         padding: 10%;
     }
 }
-
-
-
-
-
